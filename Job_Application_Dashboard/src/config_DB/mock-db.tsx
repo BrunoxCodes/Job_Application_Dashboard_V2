@@ -4,10 +4,11 @@ import data from "./records.ts";
 import type {
   dataRecords,
   LoginCredentials,
+  SearchKey,
   Status,
 } from "../types/db_types.js";
 
-export const fetchData = (filter: Status) => {
+export const filterApplications = (filter: Status) => {
   const [filtered, setFiltered] = useState<dataRecords[]>([]);
 
   const filteredData = data.filter((item) => item.status === filter);
@@ -15,6 +16,13 @@ export const fetchData = (filter: Status) => {
   setFiltered(filteredData);
 
   return filtered;
+};
+export const searchApplications = (search: SearchKey) => {
+  const results = data.filter(
+    (item) => item.company_name.includes(search) || item.role.includes(search),
+  );
+
+  return results;
 };
 export const checkCredentials = ({ email, password }: LoginCredentials) => {
   const user = admins.find(
@@ -25,5 +33,3 @@ export const checkCredentials = ({ email, password }: LoginCredentials) => {
 
   return user;
 };
-
-

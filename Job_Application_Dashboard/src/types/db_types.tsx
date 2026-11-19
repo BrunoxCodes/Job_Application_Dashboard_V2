@@ -18,3 +18,5 @@ export type dataRecords = {
   favorite: boolean;
   id: string;
 };
+
+export type SearchKey = string;
