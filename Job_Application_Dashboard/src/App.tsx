@@ -1,10 +1,11 @@
-import './App.css'
+// import useAdmins from "./hooks/useAdminsApi";
+import Dashboard from "./components/dashboard";
 
-function App() {
+export default function App() {
+
   return (
     <>
+      <Dashboard />
     </>
-  )
-}
-
-export default App
+  );
+};

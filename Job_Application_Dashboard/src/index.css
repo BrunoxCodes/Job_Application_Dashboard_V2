@@ -3,7 +3,7 @@
 :root {
   color-scheme: light;
 
-  --bg: #FFF4C2;
+  --bg: #fcf7e4;
   --surface: #FFFDDD;
   --surface-secondary: #F5EBD6;
 
@@ -42,4 +42,11 @@
   --success: #75C995;
   --danger: #F08072;
   --warning: #E8B65C;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background-color 150ms, color 150ms;
 }
