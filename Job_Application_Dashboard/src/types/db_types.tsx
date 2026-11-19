@@ -20,3 +20,12 @@ export type dataRecords = {
 };
 
 export type SearchKey = string;
+
+export type SearchProps = {
+  search: string;
+  setSearch: (value: string) => void;
+};
+
+export type ResultsProps = {
+  applications: dataRecords[];
+};

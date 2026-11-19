@@ -19,7 +19,9 @@ export const filterApplications = (filter: Status) => {
 };
 export const searchApplications = (search: SearchKey) => {
   const results = data.filter(
-    (item) => item.company_name.includes(search) || item.role.includes(search),
+    (item) =>
+      item.company_name.toLowerCase().includes(search.toLowerCase()) ||
+      item.role.toLowerCase().includes(search.toLowerCase()),
   );
 
   return results;
