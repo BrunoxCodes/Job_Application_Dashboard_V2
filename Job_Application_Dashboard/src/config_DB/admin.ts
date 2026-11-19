@@ -1,0 +1,48 @@
+import type { User } from "../types/db_types";
+
+const admins: User[] = [
+  {
+    name: "Bahenda Bruno",
+    avatar: "avatar 1",
+    email: "bruno@email.com",
+    password: "12345",
+    id: "1",
+  },
+  {
+    name: "Dushimiyimana Maxime",
+    avatar: "avatar 2",
+    email: "maxime@email.com",
+    password: "12345",
+    id: "2",
+  },
+  {
+    name: "Fides Rudahangarwa",
+    avatar: "avatar 3",
+    email: "fides@email.com",
+    password: "12345",
+    id: "3",
+  },
+  {
+    name: "Elvis Katabarwa",
+    avatar: "avatar 4",
+    email: "elvis@email.com",
+    password: "12345",
+    id: "4",
+  },
+  {
+    name: "Jireh",
+    avatar: "avatar 5",
+    email: "jireh@email.com",
+    password: "12345",
+    id: "5",
+  },
+  {
+    name: "Denver",
+    avatar: "avatar 6",
+    email: "den@email.com",
+    password: "12345",
+    id: "6",
+  },
+];
+
+export default admins;
