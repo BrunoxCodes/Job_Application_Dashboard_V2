@@ -15,6 +15,10 @@ const ApplicationsSection = () => {
     useState<dataRecords[]>(data);
 
   useEffect(() => {
+    if (!search.trim()) {
+      setFilteredApplications(data);
+      return;
+    }
     const filtered = searchApplications(search);
 
     setFilteredApplications(filtered);

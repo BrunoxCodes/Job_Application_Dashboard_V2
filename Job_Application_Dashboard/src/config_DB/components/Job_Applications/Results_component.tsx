@@ -9,11 +9,19 @@ const ResultsComponent = ({ applications }: ResultsProps) => {
           .map((item) => (
             <div
               key={item.id}
-              className="flex justify-between items-center gap-4 py-2 px-3"
+              className="grid grid-cols-[1fr_1.5fr_1fr_auto_auto] items-center gap-4 py-2 px-3"
             >
-              <h3>{item.company_name}</h3>
-              <p>{item.role}</p>
-              <p className={``}>{item.status}</p>
+              <h3 className=" text-base text-(--text) font-medium">
+                {item.company_name}
+              </h3>
+              <p className=" text-md text-(--text-muted) font-medium">
+                {item.role}
+              </p>
+              <p
+                className={`${item.status === "Interview" ? "bg-blue-400 text-(--text)" : item.status === "Applied" ? "bg-orange-400 text-(--text)" : item.status === "Offer" ? "bg-(--success) text-(--text)" : "bg-(--danger) text-(--text)"} rounded-2xl p- 0.5 text-center`}
+              >
+                {item.status}
+              </p>
               <div className="flex gap-2 items-center">
                 <Link
                   to="#"
