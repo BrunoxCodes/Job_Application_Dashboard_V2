@@ -1,11 +1,12 @@
-import type { FilterProps, SearchFilter } from "../../../types/db_types";
+import type { SelectProps, SearchFilter } from "../../../types/db_types";
 
-const SelectComponent = ({ setSearchFilter }: FilterProps) => {
+const SelectComponent = ({ statusFilter, setStatusFilter }: SelectProps) => {
   return (
     <select
       className="w-[30%] py-2 px-6 bg-(--surface) border border-(--border) focus-visible:outline-none focus-visible:ring-2 
       focus-visible:ring-blue-500 focus-visible:border-blue-500 rounded-md divide-x divide-slate"
-      onChange={(e) => setSearchFilter(e.target.value as SearchFilter)}
+      value={statusFilter}
+      onChange={(e) => setStatusFilter(e.target.value as SearchFilter)}
     >
       <option value="all">All</option>
       <option value="applied">Applied</option>

@@ -1,29 +1,29 @@
-import { useState } from "react";
 import admins from "./admin.ts";
 import data from "./records.ts";
 import type {
-  dataRecords,
+  SearchFilter,
   LoginCredentials,
   SearchKey,
-  Status,
 } from "../types/db_types.js";
 
-export const filterApplications = (filter: Status) => {
-  const [filtered, setFiltered] = useState<dataRecords[]>([]);
+export const filterApplications = (filter: SearchFilter) => {
+  if (filter === "All") return data;
 
-  const filteredData = data.filter((item) => item.status === filter);
-
-  setFiltered(filteredData);
-
-  return filtered;
+  return data.filter(
+    (item) => item.status.toLowerCase() === filter.toLowerCase(),
+  );
 };
-export const searchApplications = (search: SearchKey) => {
+export const searchApplications = (statusFilter: string, search: SearchKey) => {
   const results = data.filter((item) => {
-    const matchesSearch =
-      item.company_name.toLowerCase().includes(search.toLowerCase()) ||
-      item.role.toLowerCase().includes(search.toLowerCase());
+    const searchValue = search.trim().toLowerCase();
 
-    const matchesFilter = search === "all" || item.status === search;
+    const matchesSearch =
+      item.company_name.toLowerCase().includes(searchValue) ||
+      item.role.toLowerCase().includes(searchValue);
+
+    const matchesFilter =
+      statusFilter === "All" ||
+      item.status.toLowerCase() === statusFilter.toLowerCase();
 
     return matchesSearch && matchesFilter;
   });

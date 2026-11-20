@@ -1,3 +1,5 @@
+import type { Dispatch, SetStateAction } from "react";
+
 export type Theme = "light" | "dark";
 
 export type User = {
@@ -22,17 +24,23 @@ export type dataRecords = {
 
 export type SearchKey = string;
 
-export type SearchProps = {
-  search: string;
-  setSearch: (value: string) => void;
-};
+// export type SearchProps = {
+//   search: string;
+//   setSearch: (value: string) => void;
+// };
 
 export type ResultsProps = {
   applications: dataRecords[];
 };
 
-export type SearchFilter = Status | "all";
+export type SearchFilter = Status | "All";
 
-export type FilterProps = {
-  setSearchFilter: (value: SearchFilter) => void;
+export type SelectProps = {
+  statusFilter: string;
+  setStatusFilter: Dispatch<SetStateAction<string>>;
+};
+
+export type SearchProps = {
+  search: string;
+  setSearch: Dispatch<SetStateAction<string>>;
 };

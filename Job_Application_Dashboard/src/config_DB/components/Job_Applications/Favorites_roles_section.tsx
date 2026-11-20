@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { dataRecords } from "../../../types/db_types";
 import { sortFavoriteRoles } from "../../mock-db";
-import { Star, StarCheck } from "lucide-react";
+import { StarCheck } from "lucide-react";
 
 const FavoritesRoles = () => {
   const [favoriteRoles, setFavoriteRoles] = useState<dataRecords[]>([]);
