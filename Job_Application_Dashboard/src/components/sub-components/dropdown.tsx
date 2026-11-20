@@ -2,6 +2,8 @@
 import { UserRound, Settings, LogOut } from "lucide-react";
 import AnchorLinks from "./anchorLinks";
 import { motion } from "motion/react";
+import { useNavigate } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 interface classProp {
   className: string;
@@ -9,6 +11,13 @@ interface classProp {
 }
 
 export default function Dropdown({ className, isToggle }: classProp) {
+  const { admin, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/", { replace: true });
+  };
   return (
     <motion.nav
       className={className}
@@ -30,7 +39,7 @@ export default function Dropdown({ className, isToggle }: classProp) {
         <Settings /> Settings
       </AnchorLinks>
 
-      <AnchorLinks>
+      <AnchorLinks onClick={handleLogout}>
         <LogOut /> Sign Out
       </AnchorLinks>
     </motion.nav>

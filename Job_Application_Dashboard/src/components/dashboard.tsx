@@ -3,8 +3,8 @@ import TopNav from "./topNav";
 
 export default function Dashboard() {
   return (
-    <div className="relative bg-(--bg) text-(--text)">
-      <div className="right absolute right-0 top-0 w-[85%]">
+    <div className="bg-(--bg) text-(--text) flex">
+      <div className="w-full">
         <TopNav />
         <ShowTotals />
       </div>
