@@ -1,4 +1,3 @@
-import { useState } from "react"
 
 export default function useToggle() {
   const [isToggled,setToggle] = useState<boolean>(false)
