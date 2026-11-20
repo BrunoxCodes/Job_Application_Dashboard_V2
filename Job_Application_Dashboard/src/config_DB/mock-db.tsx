@@ -18,11 +18,15 @@ export const filterApplications = (filter: Status) => {
   return filtered;
 };
 export const searchApplications = (search: SearchKey) => {
-  const results = data.filter(
-    (item) =>
+  const results = data.filter((item) => {
+    const matchesSearch =
       item.company_name.toLowerCase().includes(search.toLowerCase()) ||
-      item.role.toLowerCase().includes(search.toLowerCase()),
-  );
+      item.role.toLowerCase().includes(search.toLowerCase());
+
+    const matchesFilter = search === "all" || item.status === search;
+
+    return matchesSearch && matchesFilter;
+  });
 
   return results;
 };
@@ -34,4 +38,12 @@ export const checkCredentials = ({ email, password }: LoginCredentials) => {
   if (!user) return;
 
   return user;
+};
+
+export const sortFavoriteRoles = () => {
+  const favoritesRoles = data
+    .filter((item) => item.favorite)
+    .sort((a, b) => b.likes - a.likes);
+
+  return favoritesRoles;
 };

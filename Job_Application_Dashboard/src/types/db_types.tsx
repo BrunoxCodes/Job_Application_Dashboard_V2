@@ -16,6 +16,7 @@ export type dataRecords = {
   status: Status;
   applied_Date: number;
   favorite: boolean;
+  likes: number;
   id: string;
 };
 
@@ -28,4 +29,10 @@ export type SearchProps = {
 
 export type ResultsProps = {
   applications: dataRecords[];
+};
+
+export type SearchFilter = Status | "all";
+
+export type FilterProps = {
+  setSearchFilter: (value: SearchFilter) => void;
 };

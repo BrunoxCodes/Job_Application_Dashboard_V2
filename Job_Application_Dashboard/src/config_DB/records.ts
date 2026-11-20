@@ -7,6 +7,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795020806,
     favorite: true,
+    likes: 145,
     id: "1",
   },
   {
@@ -15,6 +16,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795020746,
     favorite: false,
+    likes: 89,
     id: "2",
   },
   {
@@ -23,6 +25,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795020686,
     favorite: false,
+    likes: 32,
     id: "3",
   },
   {
@@ -31,6 +34,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795020626,
     favorite: true,
+    likes: 132,
     id: "4",
   },
   {
@@ -39,6 +43,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795020566,
     favorite: false,
+    likes: 76,
     id: "5",
   },
   {
@@ -47,6 +52,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795020506,
     favorite: true,
+    likes: 118,
     id: "6",
   },
   {
@@ -55,6 +61,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795020446,
     favorite: false,
+    likes: 41,
     id: "7",
   },
   {
@@ -63,6 +70,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795020386,
     favorite: false,
+    likes: 63,
     id: "8",
   },
   {
@@ -71,6 +79,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795020326,
     favorite: true,
+    likes: 95,
     id: "9",
   },
   {
@@ -79,6 +88,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795020266,
     favorite: false,
+    likes: 28,
     id: "10",
   },
   {
@@ -87,6 +97,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795020267,
     favorite: false,
+    likes: 84,
     id: "11",
   },
   {
@@ -95,6 +106,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795020207,
     favorite: true,
+    likes: 72,
     id: "12",
   },
   {
@@ -103,6 +115,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795020147,
     favorite: false,
+    likes: 57,
     id: "13",
   },
   {
@@ -111,6 +124,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795020087,
     favorite: true,
+    likes: 109,
     id: "14",
   },
   {
@@ -119,6 +133,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795020027,
     favorite: false,
+    likes: 91,
     id: "15",
   },
   {
@@ -127,6 +142,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795019967,
     favorite: false,
+    likes: 35,
     id: "16",
   },
   {
@@ -135,6 +151,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019907,
     favorite: true,
+    likes: 127,
     id: "17",
   },
   {
@@ -143,6 +160,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795019847,
     favorite: false,
+    likes: 68,
     id: "18",
   },
   {
@@ -151,6 +169,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019787,
     favorite: false,
+    likes: 24,
     id: "19",
   },
   {
@@ -159,6 +178,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795019727,
     favorite: true,
+    likes: 115,
     id: "20",
   },
   {
@@ -167,6 +187,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795019667,
     favorite: false,
+    likes: 48,
     id: "21",
   },
   {
@@ -175,6 +196,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019607,
     favorite: false,
+    likes: 19,
     id: "22",
   },
   {
@@ -183,6 +205,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795019547,
     favorite: true,
+    likes: 138,
     id: "23",
   },
   {
@@ -191,6 +214,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019487,
     favorite: false,
+    likes: 99,
     id: "24",
   },
   {
@@ -199,6 +223,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795019427,
     favorite: false,
+    likes: 21,
     id: "25",
   },
   {
@@ -207,6 +232,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795019367,
     favorite: true,
+    likes: 81,
     id: "26",
   },
   {
@@ -215,6 +241,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019307,
     favorite: false,
+    likes: 53,
     id: "27",
   },
   {
@@ -223,6 +250,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795019247,
     favorite: true,
+    likes: 149,
     id: "28",
   },
   {
@@ -231,6 +259,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795019187,
     favorite: false,
+    likes: 87,
     id: "29",
   },
   {
@@ -239,6 +268,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795019127,
     favorite: false,
+    likes: 44,
     id: "30",
   },
   {
@@ -247,6 +277,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795019067,
     favorite: true,
+    likes: 121,
     id: "31",
   },
   {
@@ -255,6 +286,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795019007,
     favorite: false,
+    likes: 62,
     id: "32",
   },
   {
@@ -263,6 +295,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018947,
     favorite: false,
+    likes: 73,
     id: "33",
   },
   {
@@ -271,6 +304,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795018887,
     favorite: true,
+    likes: 93,
     id: "34",
   },
   {
@@ -279,6 +313,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795018827,
     favorite: false,
+    likes: 39,
     id: "35",
   },
   {
@@ -287,6 +322,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018767,
     favorite: false,
+    likes: 17,
     id: "36",
   },
   {
@@ -295,6 +331,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795018707,
     favorite: true,
+    likes: 106,
     id: "37",
   },
   {
@@ -303,6 +340,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018647,
     favorite: false,
+    likes: 58,
     id: "38",
   },
   {
@@ -311,6 +349,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795018587,
     favorite: true,
+    likes: 143,
     id: "39",
   },
   {
@@ -319,6 +358,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795018527,
     favorite: false,
+    likes: 67,
     id: "40",
   },
   {
@@ -327,6 +367,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018467,
     favorite: false,
+    likes: 26,
     id: "41",
   },
   {
@@ -335,6 +376,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795018407,
     favorite: true,
+    likes: 88,
     id: "42",
   },
   {
@@ -343,6 +385,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018347,
     favorite: false,
+    likes: 46,
     id: "43",
   },
   {
@@ -351,6 +394,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795018287,
     favorite: true,
+    likes: 134,
     id: "44",
   },
   {
@@ -359,6 +403,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795018227,
     favorite: false,
+    likes: 79,
     id: "45",
   },
   {
@@ -367,6 +412,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795018167,
     favorite: false,
+    likes: 31,
     id: "46",
   },
   {
@@ -375,6 +421,7 @@ const data: dataRecords[] = [
     status: "Rejected",
     applied_Date: 1795018107,
     favorite: true,
+    likes: 97,
     id: "47",
   },
   {
@@ -383,6 +430,7 @@ const data: dataRecords[] = [
     status: "Interview",
     applied_Date: 1795018047,
     favorite: false,
+    likes: 55,
     id: "48",
   },
   {
@@ -391,6 +439,7 @@ const data: dataRecords[] = [
     status: "Applied",
     applied_Date: 1795017987,
     favorite: true,
+    likes: 112,
     id: "49",
   },
   {
@@ -399,6 +448,7 @@ const data: dataRecords[] = [
     status: "Offer",
     applied_Date: 1795017927,
     favorite: false,
+    likes: 42,
     id: "50",
   },
 ];
