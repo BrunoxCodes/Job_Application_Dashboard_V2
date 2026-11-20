@@ -1,6 +1,11 @@
 import FullApplicationsPart from "./config_DB/components/Job_Applications/Full_Applications_part";
+// import useAdmins from "./hooks/useAdminsApi";
+import { Route, Routes } from "react-router-dom";
+import LoginForm from "./components/loginForm";
+import Dashboard from "./components/dashboard";
 
-function App() {
+export default function App() {
+
   return (
     <div className="w-full min-h-screen flex gap-4">
       <div className="w-[15%] min-h-screen">
@@ -14,3 +19,12 @@ function App() {
 }
 
 export default App;
+    <>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
+  );
+};
+
