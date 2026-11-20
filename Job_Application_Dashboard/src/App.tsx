@@ -18,13 +18,6 @@ function App() {
         ontoggle={handleToggle}
         onselectsection={selectsection}
       />
-
-      <main className="flex-1 overflow-y-auto p-8 bg-slate-50">
-        {activesection === 'Dashboard' && <h1 className="text-2xl font-bold">Dashboard Overview</h1>}
-        {activesection === 'Application' && <h1 className="text-2xl font-bold">Job Applications</h1>}
-        {activesection === 'Notification' && <h1 className="text-2xl font-bold">Notifications</h1>}
-        {activesection === 'Setting' && <h1 className="text-2xl font-bold">Account Settings</h1>}
-      </main>
     </div>
   );
 }
