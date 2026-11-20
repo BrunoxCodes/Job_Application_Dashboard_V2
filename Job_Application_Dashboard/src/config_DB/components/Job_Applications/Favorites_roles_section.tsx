@@ -39,7 +39,9 @@ const FavoritesRoles = () => {
             ))
             .slice(0, 10)
         ) : (
-          <p className="text-xl text-mute">No Favorite Roles.</p>
+          <p className="w-full h-100 flex items-center justify-center text-xl text-gray-400 font-semibold">
+            No Favorite Roles.
+          </p>
         )}
       </div>
     </div>
