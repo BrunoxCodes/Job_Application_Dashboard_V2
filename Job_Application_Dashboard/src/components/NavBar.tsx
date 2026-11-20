@@ -19,13 +19,13 @@ const NavBar = ({
     onselectsection,
 }: sidenavProps) => {
     return (
-        <aside className={`flex flex-col bg-[var(--surface)] text-[var(--text)] border-r border-[var(--border)] transition-all duration-300 ${iscollapsed ? 'w-20' : 'w-64'}`}>
-            <div className="p-4 flex items-center justify-between border-b border-[var(--border)]">
+        <aside className={`flex flex-col h-screen bg-(--surface) text-(--text) border-r border-(--border) transition-all duration-300 ${iscollapsed ? 'w-20' : 'w-64'}`}>
+            <div className="p-4 flex items-center justify-between border-b border-(--border)">
                 <button
                     type="button"
                     onClick={ontoggle}
                     aria-label="Toggle navigation"
-                    className="p-2 rounded bg-[var(--surface-secondary)] hover:bg-[var(--border)] text-xs text-[var(--text)]"
+                    className="p-2 rounded bg-(--surface-secondary) hover:bg-(--border) text-xs text-(--text)"
                 >
                     {iscollapsed ? <ChevronsRight /> : <ChevronsLeft />}
                 </button>
@@ -42,8 +42,8 @@ const NavBar = ({
                             aria-current={isactive ? 'page' : undefined}
                             className={`flex items-center px-3 py-2.5 rounded-lg text-left text-sm font-medium transition-colors ${
                                 isactive
-                                    ? 'bg-[var(--primary)] text-white'
-                                    : 'text-[var(--text-muted)] hover:bg-[var(--surface-secondary)] hover:text-[var(--text)]'
+                                    ? 'bg-(--primary) text-white'
+                                    : 'text-(--text-muted) hover:bg-(--surface-secondary) hover:text-(--text)'
                             }`}
                         >
                             {iscollapsed ? item.icon : item.label}
